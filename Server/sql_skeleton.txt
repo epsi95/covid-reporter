@@ -1,0 +1,59 @@
+//user data
+CREATE TABLE user_map (
+id VARCHAR(100) PRIMARY KEY NOT NULL,
+user_age_lower INT(3),
+user_age_upper INT(3),
+user_gender CHAR(1),
+user_first_lat DECIMAL(10,8),
+user_first_lon DECIMAL(10,8),
+user_last_known_lat DECIMAL(10,8),
+user_last_known_lon DECIMAL(10,8)
+);
+
+//sample insert
+sample id: vTjiNW7tu5up5dUe$28.4999233$77.0682333$24 AES ECB 128
+emcryption key: 6QNQcDS8yQodlSac
+encrypted id: 7XdCxxXs5wOZOHUxd5C78xJLhep/nXDK2r7vI0MAsE56bHCwOUVwG3WMw0RMeDH1
+
+INSERT INTO user_map VALUES ("7XdCxxXs5wOZOHUxd5C78xJLhep/nXDK2r7vI0MAsE56bHCwOUVwG3WMw0RMeDH1", 24, 24, "M", 28.4999233, 77.0682333, 28.4999233, 77.0682333);
+
+//case data
+CREATE TABLE reported_case_table (
+case_id INT AUTO_INCREMENT PRIMARY KEY,
+case_lat DECIMAL(10,8),
+case_lon DECIMAL(10,8),
+case_age_lower INT(3),
+case_age_upper INT(3),
+case_gender CHAR(1),
+date_of_information VARCHAR(15),
+date_of_report VARCHAR(15),
+note VARCHAR(5000),
+points INT(255),
+reported_by VARCHAR(100),
+system_time TIMESTAMP,
+is_deleted INT(1) NOt NULL
+);
+
+
+//sample data input date YYYY-MM-DD
+INSERT INTO reported_case_table (case_lat, case_lon, case_age_lower, case_age_upper, case_gender, date_of_information, date_of_report, note, points, reported_by) VALUES(
+28.4999233,
+77.0682333,
+50,
+60,
+"M",
+"2020-04-12",
+"2020-04-12",
+"dummy case",
+1,
+"vTjiNW7tu5up5dUe$28.4999233$77.0682333$24"
+);
+
+//citation table
+CREATE TABLE citation_table (
+case_id INT,
+cited_by VARCHAR(100)
+);
+
+//sample data
+INSERT INTO citation_table VALUES (1,"vTjiNW7tu5sdtdUe$28.4999233$77.0682333$24");
