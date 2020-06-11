@@ -22,6 +22,8 @@ An app to help people identify COVID-19 patients.
 <br>
 <img src="Samples/covid_reporter.png" width="700px">
 ----
-<img src="Samples/Screenshot_1587563965.png" height="300px"><img src="Samples/Screenshot_1587564110.png" height="300px">
-<img src="Samples/Screenshot_1587563845.png" height="300px"><img src="Samples/Screenshot_1587564015.png" height="300px">
+|||
+|:---:|:---:|
+|![](<img src="Samples/Screenshot_1587563965.png" height="300px">)|![](<img src="Samples/Screenshot_1587564110.png" height="300px">)|
+|![](<img src="Samples/Screenshot_1587563845.png" height="300px">)|![](<img src="Samples/Screenshot_1587564015.png" height="300px">)|
 
