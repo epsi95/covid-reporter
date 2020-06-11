@@ -2,7 +2,7 @@
 
 An app to help people identify COVID-19 patients.
 
-#### What problems I tries to solve
+#### What problems I tried to solve
   Users were having privacy concerns when they have to use an app that is used to track them. So I came up with an idea to uniquely identify each user without any personal information. When the user registers for the forst time, she/he puts his age, gender and location. Server generates a unique string and binds it with the information provided by the user. It then encrypts it using AES and sends it to mobile side which is stored in users device. Next time user logs in, it verifies its identity using the encrypted identity key.
   
 #### What services do this app offer
@@ -20,9 +20,9 @@ An app to help people identify COVID-19 patients.
 <a href="https://www.youtube.com/watch?v=nPQMculx1d4&t">Youtube link</a>
 <br>
 <br>
-<img src="Samples/covid_reporter.png" width="500px">
+<img src="Samples/covid_reporter.png" width="700px">
 ----
-<img src="Samples/Screenshot_1587563965.png" height="200px">
-<img src="Samples/Screenshot_1587564110.png" height="200px">
-<img src="Samples/Screenshot_1587563845.png" height="200px">
-<img src="Samples/Screenshot_1587564015.png" height="200px">
+<img src="Samples/Screenshot_1587563965.png" height="300px" style="display: inline">
+<img src="Samples/Screenshot_1587564110.png" height="300px" style="display: inline">
+<img src="Samples/Screenshot_1587563845.png" height="300px" style="display: inline">
+<img src="Samples/Screenshot_1587564015.png" height="300px" style="display: inline">
